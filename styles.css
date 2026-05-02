@@ -1,0 +1,115 @@
+*{
+    text-align: center;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    margin:0px;
+}
+.header{
+    background:orangered;
+    padding:20px;
+    border-radius:0px 0px 20px 20px;
+    border-top:5px solid white;
+    position: sticky;
+    top:0;
+    z-index:1000;
+}
+.header-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: transparent;
+}
+#category-filter{
+    padding:8px 12px;
+    border-radius: 5px;
+    background-color: #000000;
+    color:#ffffff;
+    font-weight:bold;
+    cursor:pointer;
+    border:none;
+
+}
+.header-content *{
+    background-color: transparent;
+
+}
+h1,h2{
+    background-color: transparent;
+    margin:10px;
+}
+.card-row{
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:20px;
+}
+ .card{
+    background-color: rgba(253,253,253,0.73);
+    padding:15px;
+    border:2px solid white; 
+    flex:1 1 300px;
+    border-radius: 10px 10px 0px opx;
+    border-top:5px solid rgba(4,163,255,0.93);
+    cursor:pointer;
+ } 
+ p{ 
+    padding:10px;
+    border:2px dashed white;
+
+}
+img{
+    height:200px;
+    width:200px;
+}
+.model-overlay{
+    display:none;
+    z-index:1000;
+    left:0;
+    right:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-content{
+    background-color: white;
+    color:black;
+    padding:30px;
+    border-radius:15px;
+    width:60%;
+    max-width:600px;
+    position:relative;
+    text-align:left;
+
+
+} 
+
+.modal-content h1, .modal-content p{
+    background-color: transparent;
+    color:black;
+}
+#close-btn{
+    position:absolute;
+    right:20px;
+    top:10px;
+    font-size:30px;
+    cursor:pointer;
+    color:black;
+    background:tranparent;
+}
+.card{
+    cursor:pointer;
+    transition:transform 0.2s ;
+
+}
+.card:hover{
+    transform:scale(1.02);
+}
